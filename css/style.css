@@ -1,1 +1,111 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "roboto";
+  src: url("../ressource/typo/roboto.otf") format("otf'"), url("../ressource/typo/roboto.svg") format("svg"), url("../ressource/typo/roboto.ttf") format("ttf"), url("../ressource/typo/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../ressource/typo/roboto-bold.otf") format("otf"), url("../ressource/typo/roboto-bold.svg") format("svg"), url("../ressource/typo/roboto-bold.ttf") format("ttf"), url("../ressource/typo/roboto-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "roboto-bolder";
+  src: url("../ressource/typo/roboto-bolder.otf") format("otf"), url("../ressource/typo/roboto-bolder.svg") format("svg"), url("../ressource/typo/roboto-bolder.ttf") format("ttf"), url("../ressource/typo/roboto-bolder.woff") format("woff");
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("../ressource/typo/shrikhand.otf") format("otf"), url("../ressource/typo/shrikhand.svg") format("svg"), url("../ressource/typo/shrikhand.ttf") format("ttf"), url("../ressource/typo/shrikhand.woff") format("woff");
+}
+
+body, html {
+  width: 100%;
+  margin: 0%;
+}
+
+* {
+  font-family: roboto;
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: shrikhand;
+  margin: 0;
+}
+
+h2 {
+  font-family: roboto-bolder;
+  margin: 0;
+}
+
+h3 {
+  font-family: roboto-bold;
+  margin: 0;
+}
+
+img {
+  width: 60%;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px grey;
+  position: relative;
+}
+
+header img {
+  height: 30px;
+}
+
+.localisator {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+}
+
+.localisator div {
+  margin: 15px 10px;
+  font-size: 15px;
+}
+
+.description {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.description div {
+  margin: 10px;
+  width: 90%;
+  text-align: center;
+}
+
+.description a {
+  padding: 20px;
+  border-radius: 50px;
+  font-family: roboto-bold;
+  background-color: #9356DC;
+  color: white;
+  box-shadow: 0 6px 6px grey;
+  margin-bottom: 50px;
+  background: linear-gradient(to top, #9356DC);
+}
+
+nav {
+  display: flex;
+  border: 3px red solid;
+  flex-direction: column;
+}
+
+nav div {
+  border: solid 3px red;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
