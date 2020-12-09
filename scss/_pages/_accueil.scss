@@ -1,13 +1,13 @@
 
 .localisator{
+    width: 100%;
     display: flex;
     justify-content: center;
     background: #eaeaea;
-}
-
-.localisator div{
-    margin: 15px 10px;
-    font-size: 15px;
+    div{
+        margin: 15px 10px;
+        font-size: 15px;
+    }
 }
 
 .description{
@@ -16,31 +16,59 @@
     flex-direction: column;
     align-items: center;
     background-color:#f6f6f6;
-}
-
-.description div{
-    margin: 10px;
-    width: 90%;
-    text-align: center;
-}
-
-.description a{
-    padding: 20px;
-    border-radius: 50px;
-    font-family: roboto-bold;
-    background-color: $color-primary;
-    color: white;
-    box-shadow: 0 6px 6px grey;
-    margin-bottom: 50px;
-    background: linear-gradient(to top, $color-primary)
+    div{
+        margin: 10px;
+        width: 90%;
+        text-align: center;
+    }
+    a{
+        padding: 20px;
+        border-radius: 50px;
+        font-family: roboto-bold;
+        background-color: $color-primary;
+        color: white;
+        box-shadow: 0 6px 6px grey;
+        margin-bottom: 50px;
+        /*background: linear-gradient(to top, $color-primary)*/
+    }
 }
 
 nav {
+    width: 85%;
     display: flex;
-    border: 3px red solid;
     flex-direction: column;
+    padding: 60px 0;
+    .bloc-fonction{
+        background-color:#f6f6f6;
+        display: flex;
+        align-items: center;
+        margin: 12px 0;
+        position: relative;
+
+        left: 12px;
+        height:60px; width:90%;
+        border-radius:15px;
+        box-shadow: 0 6px 6px grey;
+        i{
+            color: grey;
+            padding-right: 22px;
+        }
+        .chiffre{
+            background-color: $color-primary;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left:-12px ;
+        }
+        div{
+            font-weight: bold;
+            font-size: small;
+        }
+    }
 }
-nav div{
-    border: solid 3px red;
-    display: flex;
-}
+
