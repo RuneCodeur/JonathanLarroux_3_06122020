@@ -1,0 +1,22 @@
+footer{
+    background-color: #353535;
+    width: 100%;
+    padding: 25px 0 25px 70px;
+    display: flex;
+    flex-direction: column;
+    div{
+        margin: 10px 0;
+        h1{
+        font-size: 20px;
+        color: white;
+        }
+    }
+    
+    a {
+        color: white;
+        margin: 10px 0;
+        i{
+            color: white;
+        }
+    }
+}

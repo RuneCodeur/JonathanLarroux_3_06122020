@@ -20,6 +20,7 @@
 
 body, html {
   width: 100%;
+  background-color: white;
   margin: 0%;
   display: flex;
   flex-direction: column;
@@ -47,8 +48,12 @@ h3 {
   margin: 0;
 }
 
-img {
-  width: 60%;
+fieldset {
+  border: none;
+}
+
+fieldset .checkbox input {
+  display: none;
 }
 
 header {
@@ -65,6 +70,32 @@ header img {
   height: 30px;
 }
 
+footer {
+  background-color: #353535;
+  width: 100%;
+  padding: 25px 0 25px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer div {
+  margin: 10px 0;
+}
+
+footer div h1 {
+  font-size: 20px;
+  color: white;
+}
+
+footer a {
+  color: white;
+  margin: 10px 0;
+}
+
+footer a i {
+  color: white;
+}
+
 .localisator {
   width: 100%;
   display: flex;
@@ -73,12 +104,12 @@ header img {
 }
 
 .localisator div {
-  margin: 15px 10px;
+  padding: 15px 10px;
   font-size: 15px;
 }
 
 .description {
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,5 +174,60 @@ nav .bloc-fonction .chiffre {
 nav .bloc-fonction div {
   font-weight: bold;
   font-size: small;
+}
+
+section {
+  padding: 60px 10px;
+  background-color: #f6f6f6;
+}
+
+section a {
+  display: block;
+  margin: 25px 0;
+  box-shadow: 0 6px 6px grey;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+section a .new {
+  display: none;
+  position: absolute;
+}
+
+section a img {
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
+}
+
+section a .texte-boite {
+  display: flex;
+  justify-content: space-between;
+}
+
+section a .texte-boite > div {
+  padding: 15px;
+}
+
+section a .texte-boite label {
+  font-size: 25px;
+  width: 70px;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  display: block;
+}
+
+section a .texte-boite label .yes {
+  position: relative;
+  color: #9356DC;
+  z-index: 2;
+  opacity: 1;
+}
+
+section a .texte-boite label .no {
+  position: relative;
+  top: -30px;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

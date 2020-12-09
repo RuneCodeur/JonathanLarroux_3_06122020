@@ -2,6 +2,7 @@
 
 body, html{
     width: 100%;
+    background-color: white;
     margin: 0%;
     display: flex;
     flex-direction: column;
@@ -29,6 +30,9 @@ h3{
     margin: 0;
 }
 
-img{
-    width: 60%;
+fieldset{
+    border: none;
+    .checkbox input{
+        display: none;
+    }
 }

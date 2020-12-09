@@ -45,36 +45,40 @@
         </div>
     </nav>
 
-    <section class="liste">
-        <div><h2>Restaurant</h2></div>
+    <section>
+        <form> 
+            <fieldset>
+        <h2>Restaurants</h2>
 
         <a href="pages/palette.html">
             <div>
-            <div>Nouveau</div>
+            <div class="new">Nouveau</div>
                 <img src="ressource/images/palette.jpg" alt="La palette du goût">
-            </div>
-            <div>
-                <div><h3>La palette du goût</h3></div>
-                <div>Ménilmontant</div>
-            </div>
-            <div>
-                <div><i class="fas fa-heart"></i></div>
-                <div><i class="far fa-heart"></i></div>
+            </div >
+            <div class="texte-boite">
+                <div><h3>La palette du goût</h3>
+                Ménilmontant</div>
+                <label class="checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <div><i class="fas fa-heart yes"></i></div>
+                    <div><i class="far fa-heart no"></i></div>
+                </label>
             </div>
         </a>
 
         <a href="pages/enchantee.html">
             <div>
-            <div>Nouveau</div>
+            <div class="new">Nouveau</div>
                 <img src="ressource/images/enchantee.jpg" alt="La note enchantée">
             </div>
-            <div>
-                <div><h3>La note enchantée</h3></div>
-                <div>Charonne</div>
-            </div>
-            <div>
-                <div><i class="fas fa-heart"></i></div>
-                <div><i class="far fa-heart"></i></div>
+            <div class="texte-boite">
+                <div><h3>La note enchantée</h3>
+                    Charonne</div>
+                <label class="checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <div><i class="fas fa-heart yes"></i></div>
+                    <div><i class="far fa-heart no"></i></div>
+                </label>
             </div>
         </a>
 
@@ -82,13 +86,14 @@
             <div>
                 <img src="ressource/images/francaise.jpg" alt="À la française">
             </div>
-            <div>
-                <div><h3>À la française</h3></div>
-                <div>Cité Rouge</div>
-            </div>
-            <div>
-                <div><i class="fas fa-heart"></i></div>
-                <div><i class="far fa-heart"></i></div>
+            <div class="texte-boite">
+                <div><h3>À la française</h3>
+                Cité Rouge</div>
+                <label class="checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <div><i class="fas fa-heart yes"></i></div>
+                    <div><i class="far fa-heart no"></i></div>
+                </label>
             </div>
         </a>
 
@@ -96,29 +101,32 @@
             <div>
                 <img src="ressource/images/delice.jpg" alt="Le délice des sens">
             </div>
-            <div>
-                <div><h3>Le délice des sens</h3></div>
-                <div>Folie-Méricourt</div>
-            </div>
-            <div>
-                <div><i class="fas fa-heart"></i></div>
-                <div><i class="far fa-heart"></i></div>
+            <div class="texte-boite">
+                <div><h3>Le délice des sens</h3>
+                Folie-Méricourt</div>
+                <label class="checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <div><i class="fas fa-heart yes"></i></div>
+                    <div><i class="far fa-heart no"></i></div>
+                </label>
             </div>
         </a>
+            </fieldset>
+        </form>
     </section>
 
     <footer>
         <div>
-            <img src="ressource/images/ohmyfood.svg" alt="Ohmyfood!">
+            <h1>ohmyfood!</h1>
         </div>
 
         <a href="index.html">
-            <div><i class="fas fa-utensils"></i></div>
+            <i class="fas fa-utensils"></i>
             Proposer un restaurant
         </a>
         
         <a href="index.html">
-            <div><i class="fas fa-hands-helping"></i></div>
+            <i class="fas fa-hands-helping"></i>
             Devenir partenaire
         </a>
 
