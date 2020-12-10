@@ -35,6 +35,7 @@ body, html {
 
 h1 {
   font-family: shrikhand;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -50,6 +51,11 @@ h3 {
 
 fieldset {
   border: none;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 fieldset .checkbox input {
@@ -66,20 +72,28 @@ header {
   position: relative;
 }
 
-header img {
-  height: 30px;
+header a {
+  height: 37.5px;
+  width: 50px;
+  position: absolute;
+  padding-top: 20px;
+  text-align: center;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  color: #353535;
 }
 
 footer {
   background-color: #353535;
   width: 100%;
-  padding: 25px 0 25px 70px;
+  padding: 25px 0 25px 0;
   display: flex;
   flex-direction: column;
 }
 
 footer div {
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 
 footer div h1 {
@@ -89,11 +103,116 @@ footer div h1 {
 
 footer a {
   color: white;
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 
 footer a i {
   color: white;
+}
+
+.img-background {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.menu {
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  top: -50px;
+  background-color: #f6f6f6;
+}
+
+.menu .nom-resto {
+  align-items: center;
+  display: flex;
+}
+
+.menu .nom-resto h1 {
+  font-size: 25px;
+  width: 240px;
+  margin: 25px 10px;
+}
+
+.menu .titre {
+  margin: 40px 20px;
+}
+
+.menu .titre + div {
+  border: 2px solid #99E2D0;
+  position: relative;
+  top: -35px;
+  left: 20px;
+  width: 40px;
+}
+
+.menu .bloc {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 280px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0 10px;
+  margin: 10px;
+  font-size: small;
+  border-radius: 20px;
+  box-shadow: 0 0 6px grey;
+}
+
+.menu .bloc .sous-bloc {
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu .bloc .sous-bloc .sous-nom {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.menu .bloc .sous-bloc .sous-nom p {
+  width: 260px;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 15px;
+}
+
+.menu .bloc .sous-bloc .sous-nom h3 {
+  width: 40px;
+  padding-top: 11px;
+}
+
+.menu .bloc .effect {
+  position: relative;
+  top: -80px;
+  right: -230px;
+  padding-top: 35px;
+  padding-left: 15px;
+  height: 100px;
+  width: 100px;
+  font-size: 25px;
+  display: none;
+  color: white;
+  background-color: #99E2D0;
+}
+
+.menu .bloc input {
+  display: none;
+}
+
+.menu .commander {
+  background-color: #9356DC;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 180px;
+  border-radius: 25px;
 }
 
 .localisator {
@@ -209,23 +328,23 @@ section a .texte-boite > div {
   padding: 15px;
 }
 
-section a .texte-boite label {
+.checkbox {
   font-size: 25px;
-  width: 70px;
+  width: 50px;
   height: 50px;
   padding-top: 15px;
   text-align: center;
   display: block;
 }
 
-section a .texte-boite label .yes {
+.checkbox .yes {
   position: relative;
   color: #9356DC;
   z-index: 2;
   opacity: 1;
 }
 
-section a .texte-boite label .no {
+.checkbox .no {
   position: relative;
   top: -30px;
   color: black;

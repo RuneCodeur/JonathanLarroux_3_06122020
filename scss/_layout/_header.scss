@@ -6,7 +6,15 @@ header{
     justify-content: center;
     box-shadow: 0 0 6px grey ;
     position: relative;
-    img{
-        height: 30px;
+    a{
+        height: 37.5px;
+        width: 50px;
+        position: absolute;
+        padding-top: 20px;
+        text-align: center;
+        left: 0;
+        top: 0;
+        font-size: 20px;
+        color: #353535;
     }
 }

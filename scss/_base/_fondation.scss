@@ -17,6 +17,7 @@ body, html{
 
 h1{
     font-family: shrikhand;
+    font-weight: normal;
     margin: 0;
 }
 
@@ -32,6 +33,12 @@ h3{
 
 fieldset{
     border: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     .checkbox input{
         display: none;
     }

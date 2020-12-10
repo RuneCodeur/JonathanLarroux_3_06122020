@@ -4,139 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>À la française</title>
 </head>
 <body>
 
     <header>
-        <a href="../index.html"></a>
-        <div><img src="ressource/images/ohmyfood.svg" alt="Ohmyfood!"></div>
+        <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+        <img src="../ressource/images/ohmyfood.svg" alt="Ohmyfood!">
     </header>
 
-    <div><img src="../ressource/images/francaise.jpg" alt="À la française"></div>
+    <img class="img-background" src="../ressource/images/francaise.jpg" alt="À la française">
 
-    <div>
-        <div>
-            <div>À la française</div>
-            <div>heart yes</div>
-            <div>heart no</div>
-        </div>
-
-        <div>
-            <div>Entrées</div>
-
-            <div>
-                <div>Tartare de poulpe acidulé</div>
-                <div>
-                    <div>Aux zestes d'orange</div>
-                    <div>25€</div>
+    <div class="menu">
+        <form>
+            <fieldset>
+                <div class="nom-resto">
+                    <div><h1>À la française</h1></div>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <div><i class="fas fa-heart yes"></i></div>
+                        <div><i class="far fa-heart no"></i></div>
+                    </label>
                 </div>
-                <div></div>
-            </div>
 
-            <div>
-                <div>Velouté de légumes d'antan</div>
                 <div>
-                    <div>Carotte, panais, topinambour</div>
-                    <div>35€</div>
-                </div>
-                <div></div>
-            </div>
+                    <div class="titre">ENTRÉES</div>
+                    <div></div>
 
-            <div>
-                <div>Soupe à l'oignon</div>
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Tartare de poulpe acidulé</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Aux zestes d'orange</p>
+                            <h3>25€</h3>
+                            </div>
+                        </div>
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
+
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Velouté de légumes d'antan</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Carotte, panais, topinambour</p>
+                            <h3>35€</h3>
+                            </div>
+                        </div>
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
+
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Soupe à l'oignon</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Revisitée</p>
+                            <h3>20€</h3>
+                            </div>
+                        </div>                        
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
+                </div>
+
                 <div>
-                    <div>Revisitée</div>
-                    <div>20€</div>
+                    <div class="titre">PLATS</div>
+                    <div></div>
+
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Coquilles Saint-Jacques</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Accompagnées d'une purée de panais</p>
+                            <h3>40€</h3>
+                            </div>
+                        </div>
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
+
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Magret de canard</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Et parmentier de pommes de terre</p>
+                            <h3>35€</h3>
+                            </div>
+                        </div>
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
+
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                            <h3>44€</h3>
+                            </div>
+                        </div>
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
                 </div>
-                <div></div>
-            </div>
-        </div>
 
-        <div>
-            <div>Plats</div>
-
-            <div>
-                <div>Coquilles Saint-Jacques</div>
                 <div>
-                    <div>Accompagnées d'une purée de panais</div>
-                    <div>40€</div>
-                </div>
-                <div></div>
-            </div>
+                    <div class="titre">DESSERTS</div>
+                    <div></div>
 
-            <div>
-                <div>Magret de canard</div>
-                <div>
-                    <div>Et parmentier de pommes de terre</div>
-                    <div>35€</div>
-                </div>
-                <div></div>
-            </div>
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Pétales de violettes glacés</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Et purée de noisettes</p>
+                            <h3>18€</h3>
+                            </div>
+                        </div>
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
 
-            <div>
-                <div>Pigeonneau d’Ille-et-Vilaine</div>
-                <div>
-                    <div>Sur son lit de gnocchis aux légumes</div>
-                    <div>44€</div>
-                </div>
-                <div></div>
-            </div>
-        </div>
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Fondant au chocolat</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Revisité</p>
+                            <h3>22€</h3>
+                            </div>
+                        </div>
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
 
-        <div>
-            <div>Desserts</div>
-
-            <div>
-                <div>Pétales de violettes glacés</div>
-                <div>
-                    <div>Et purée de noisettes</div>
-                    <div>18€</div>
+                    <label class="bloc">
+                        <div class="sous-bloc">
+                            <div class="nom">
+                                <h3>Millefeuille croustillant</h3>
+                            </div>
+                            <div class="sous-nom">
+                            <p>Myrtilles et pâte d’amande</p>
+                            <h3>23€</h3>
+                            </div>
+                        </div>
+                        <div><i class="fas fa-check-circle effect"></i></div><input type="checkbox" class="choice">
+                    </label>
                 </div>
-                <div></div>
-            </div>
-
-            <div>
-                <div>Fondant au chocolat</div>
-                <div>
-                    <div>Revisité</div>
-                    <div>22€</div>
-                </div>
-                <div></div>
-            </div>
-
-            <div>
-                <div>Millefeuille croustillant</div>
-                <div>
-                    <div>Myrtilles et pâte d’amande</div>
-                    <div>23€</div>
-                </div>
-                <div></div>
-            </div>
-        </div>
+                <input class="commander" type="submit" value="Commander">
+            </fieldset>
+        </form>
     </div>
     
     <footer>
         <div>
-            <img src="ressource/images/ohmyfood.svg" alt="Ohmyfood!">
+            <h1>ohmyfood!</h1>
         </div>
 
-        <a href="index.html">
-            <div><i class="fas fa-utensils"></i></div>
+        <a href="../index.html">
+            <i class="fas fa-utensils"></i>
             Proposer un restaurant
         </a>
         
-        <a href="index.html">
-            <div><i class="fas fa-hands-helping"></i></div>
+        <a href="../index.html">
+            <i class="fas fa-hands-helping"></i>
             Devenir partenaire
         </a>
 
-        <a href="index.html">
+        <a href="../index.html">
             Mentions légales
         </a>
 
-        <a href="index.html">
+        <a href="../index.html">
             Contact
         </a>
 
