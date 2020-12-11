@@ -29,54 +29,57 @@
             width: 40px;
         }
     }
-
     .bloc{
         background-color: #ffffff;
-        overflow: hidden;
         width: 280px;
-        height: 60px;
+        overflow: hidden;
+        height: auto;
         display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
         margin: 10px;
-        font-size: small;
         border-radius: 20px;
-        box-shadow: 0 0 6px grey;
+        box-shadow: 0 6px 6px grey;
         .sous-bloc{
-            display: flex;
-            width: 280px;
-            flex-direction: column;
-            align-items: flex-start;
-            .sous-nom{
-                display: flex;
-                width: 280px;
-                justify-content: space-between;
-                p{
-                    width: 260px;
+            margin: 0;
+            display:flex;
+            min-width: 355px;
+            .nom{
+                margin: 10px 0 0 10px;
+                width: 225px; /*variable de 165 à 225px*/
+                height: auto;
                 font-size: 12px;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    height: 15px;
-                }
                 h3{
-                    width: 40px;
-                    padding-top: 11px;
+                    margin: 5px 10px 10px 5px;
+                    width: 205px;
+                }
+                p{
+                    margin: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin: 5px 5px 10px 5px;
+                    white-space:nowrap;
                 }
             }
-        }
-        .effect{
-            position: relative;
-            top: -80px;
-            right: -230px;
-            padding-top: 35px;
-            padding-left: 15px;
-            height: 100px;
-            width: 100px;
-            font-size: 25px;
-            display: none;
-            color: white;
-            background-color: $color-tertiary;
+            .effect{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                position: relative;
+                font-size: small;
+                h3{
+                    padding-right: 20px;
+                    padding-bottom: 10px;
+                }
+                i{
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    font-size: 25px;
+                    color: white;
+                    background-color: $color-tertiary;
+                }
+            }
         }
         input{
             display: none;
@@ -86,6 +89,7 @@
         background-color: $color-primary;
         color: white;
         border: none;
+        margin-top: 30px;
         height: 50px;
         width: 180px;
         border-radius: 25px;

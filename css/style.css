@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "roboto";
   src: url("../ressource/typo/roboto.otf") format("otf'"), url("../ressource/typo/roboto.svg") format("svg"), url("../ressource/typo/roboto.ttf") format("ttf"), url("../ressource/typo/roboto.woff") format("woff");
@@ -149,55 +150,62 @@ footer a i {
 
 .menu .bloc {
   background-color: #ffffff;
-  overflow: hidden;
   width: 280px;
-  height: 60px;
+  overflow: hidden;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  padding: 10px 10px 0 10px;
   margin: 10px;
-  font-size: small;
   border-radius: 20px;
-  box-shadow: 0 0 6px grey;
+  box-shadow: 0 6px 6px grey;
 }
 
 .menu .bloc .sous-bloc {
+  margin: 0;
   display: flex;
-  width: 280px;
-  flex-direction: column;
-  align-items: flex-start;
+  min-width: 355px;
 }
 
-.menu .bloc .sous-bloc .sous-nom {
-  display: flex;
-  width: 280px;
-  justify-content: space-between;
-}
-
-.menu .bloc .sous-bloc .sous-nom p {
-  width: 260px;
+.menu .bloc .sous-bloc .nom {
+  margin: 10px 0 0 10px;
+  width: 225px;
+  /*variable de 165 à 225px*/
+  height: auto;
   font-size: 12px;
+}
+
+.menu .bloc .sous-bloc .nom h3 {
+  margin: 5px 10px 10px 5px;
+  width: 205px;
+}
+
+.menu .bloc .sous-bloc .nom p {
+  margin: 0;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
-  height: 15px;
+  margin: 5px 5px 10px 5px;
+  white-space: nowrap;
 }
 
-.menu .bloc .sous-bloc .sous-nom h3 {
-  width: 40px;
-  padding-top: 11px;
-}
-
-.menu .bloc .effect {
+.menu .bloc .sous-bloc .effect {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   position: relative;
-  top: -80px;
-  right: -230px;
-  padding-top: 35px;
-  padding-left: 15px;
-  height: 100px;
-  width: 100px;
+  font-size: small;
+}
+
+.menu .bloc .sous-bloc .effect h3 {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.menu .bloc .sous-bloc .effect i {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
   font-size: 25px;
-  display: none;
   color: white;
   background-color: #99E2D0;
 }
@@ -210,6 +218,7 @@ footer a i {
   background-color: #9356DC;
   color: white;
   border: none;
+  margin-top: 30px;
   height: 50px;
   width: 180px;
   border-radius: 25px;
