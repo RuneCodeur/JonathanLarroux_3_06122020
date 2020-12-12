@@ -19,6 +19,18 @@
   src: url("../ressource/typo/shrikhand.otf") format("otf"), url("../ressource/typo/shrikhand.svg") format("svg"), url("../ressource/typo/shrikhand.ttf") format("ttf"), url("../ressource/typo/shrikhand.woff") format("woff");
 }
 
+nav .bloc-fonction .font--1 {
+  color: grey;
+}
+
+nav .bloc-fonction .font--2 {
+  color: grey;
+}
+
+nav .bloc-fonction .font--3 {
+  color: #9356DC;
+}
+
 body, html {
   width: 100%;
   background-color: white;
@@ -69,7 +81,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 6px grey;
+  box-shadow: 0 0 6px #999999;
   position: relative;
 }
 
@@ -81,12 +93,15 @@ header a {
   text-align: center;
   left: 0;
   top: 0;
+}
+
+header a i {
   font-size: 20px;
-  color: #353535;
+  color: #404040;
 }
 
 footer {
-  background-color: #353535;
+  background-color: #333333;
   width: 100%;
   padding: 25px 0 25px 0;
   display: flex;
@@ -99,16 +114,16 @@ footer div {
 
 footer div h1 {
   font-size: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 footer a {
-  color: white;
+  color: #ffffff;
   margin: 10px 20px;
 }
 
 footer a i {
-  color: white;
+  color: #ffffff;
 }
 
 .img-background {
@@ -122,7 +137,7 @@ footer a i {
   border-radius: 50px 50px 0 0;
   position: relative;
   top: -50px;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
 }
 
 .menu .nom-resto {
@@ -156,7 +171,7 @@ footer a i {
   display: flex;
   margin: 10px;
   border-radius: 20px;
-  box-shadow: 0 6px 6px grey;
+  box-shadow: 0 6px 6px #999999;
 }
 
 .menu .bloc .sous-bloc {
@@ -206,7 +221,7 @@ footer a i {
   align-items: center;
   width: 60px;
   font-size: 25px;
-  color: white;
+  color: #ffffff;
   background-color: #99E2D0;
 }
 
@@ -216,7 +231,7 @@ footer a i {
 
 .menu .commander {
   background-color: #9356DC;
-  color: white;
+  color: #ffffff;
   border: none;
   margin-top: 30px;
   height: 50px;
@@ -228,7 +243,7 @@ footer a i {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #eaeaea;
+  background: #e6e6e6;
 }
 
 .localisator div {
@@ -241,7 +256,7 @@ footer a i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
 }
 
 .description div {
@@ -255,8 +270,8 @@ footer a i {
   border-radius: 50px;
   font-family: roboto-bold;
   background-color: #9356DC;
-  color: white;
-  box-shadow: 0 6px 6px grey;
+  color: #ffffff;
+  box-shadow: 0 6px 6px #999999;
   margin-bottom: 50px;
   /*background: linear-gradient(to top, $color-primary)*/
 }
@@ -269,7 +284,7 @@ nav {
 }
 
 nav .bloc-fonction {
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   margin: 12px 0;
@@ -278,17 +293,17 @@ nav .bloc-fonction {
   height: 60px;
   width: 90%;
   border-radius: 15px;
-  box-shadow: 0 6px 6px grey;
+  box-shadow: 0 6px 6px #999999;
 }
 
 nav .bloc-fonction i {
-  color: grey;
+  color: #999999;
   padding-right: 22px;
 }
 
 nav .bloc-fonction .chiffre {
   background-color: #9356DC;
-  color: white;
+  color: #ffffff;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -306,13 +321,13 @@ nav .bloc-fonction div {
 
 section {
   padding: 60px 10px;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
 }
 
 section a {
   display: block;
   margin: 25px 0;
-  box-shadow: 0 6px 6px grey;
+  box-shadow: 0 6px 6px #999999;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -356,6 +371,6 @@ section a .texte-boite > div {
 .checkbox .no {
   position: relative;
   top: -30px;
-  color: black;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

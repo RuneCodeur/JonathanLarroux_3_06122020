@@ -4,7 +4,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 6px grey ;
+    box-shadow: 0 0 6px darken($color-background,40%) ;
     position: relative;
     a{
         height: 37.5px;
@@ -14,7 +14,9 @@ header{
         text-align: center;
         left: 0;
         top: 0;
+        i{
         font-size: 20px;
-        color: #353535;
+        color: darken($color-background, 75%);
+        }
     }
 }

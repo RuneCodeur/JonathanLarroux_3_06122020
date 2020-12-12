@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: #eaeaea;
+    background: darken($color-background,10%);
     div{
         padding: 15px 10px;
         font-size: 15px;
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#f6f6f6;
+    background-color:darken($color-background,5%);
     div{
         margin: 10px;
         width: 90%;
@@ -26,8 +26,8 @@
         border-radius: 50px;
         font-family: roboto-bold;
         background-color: $color-primary;
-        color: white;
-        box-shadow: 0 6px 6px grey;
+        color: $color-background;
+        box-shadow: 0 6px 6px darken($color-background,40%);
         margin-bottom: 50px;
         /*background: linear-gradient(to top, $color-primary)*/
     }
@@ -39,7 +39,7 @@ nav {
     flex-direction: column;
     padding: 60px 0;
     .bloc-fonction{
-        background-color:#f6f6f6;
+        background-color: darken($color-background,5%);
         display: flex;
         align-items: center;
         margin: 12px 0;
@@ -48,14 +48,14 @@ nav {
         height:60px; 
         width:90%;
         border-radius:15px;
-        box-shadow: 0 6px 6px grey;
+        box-shadow: 0 6px 6px darken($color-background,40%);
         i{
-            color: grey;
+            color: darken($color-background,40%);
             padding-right: 22px;
         }
         .chiffre{
             background-color: $color-primary;
-            color: white;
+            color: $color-background;
             width: 24px;
             height: 24px;
             border-radius: 50%;
@@ -74,11 +74,11 @@ nav {
 
 section{
     padding: 60px 10px;
-    background-color: #f6f6f6;
+    background-color: darken($color-background,5%);
     a{
         display: block;
         margin: 25px 0;
-        box-shadow: 0 6px 6px grey;
+        box-shadow: 0 6px 6px darken($color-background,40%);
         border-radius: 20px;
         overflow: hidden;
         .new{
@@ -116,6 +116,6 @@ section{
     .no{
         position: relative;
         top: -30px;
-        color: black;
+        color: $color-font;
     }
 }

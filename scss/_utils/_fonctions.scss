@@ -1,0 +1,12 @@
+
+
+
+@for $i from 1 through 3{
+    nav .bloc-fonction .font--#{$i}{
+        @if (($i)<=2){darken($color-background,40%);}
+        @else {
+            color: $color-primary;
+        }
+    }
+}
+
