@@ -1,12 +1,34 @@
 
+%center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+%relative{
+    position: relative;
+}
+
+%shadow {
+    box-shadow: 0 3px 6px darken($color-background,40%);
+}
+
+%max-width {
+    width: 100%;
+}
+
+%courbe-fine {
+    position: relative;
+    border-radius: 15px;
+}
 
 @for $i from 1 through 3{
     nav .bloc-fonction .font--#{$i}{
-        @if (($i)<=2){darken($color-background,40%);}
+        @if ($i<=2){
+            color: darken($color-background,40%);
+        }
         @else {
             color: $color-primary;
         }
     }
 }
-

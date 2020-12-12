@@ -1,8 +1,7 @@
 
 .localisator{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    @extend %max-width;
+    @extend %center;
     background: darken($color-background,10%);
     div{
         padding: 15px 10px;
@@ -24,12 +23,15 @@
     a{
         padding: 20px;
         border-radius: 50px;
-        font-family: roboto-bold;
         background-color: $color-primary;
-        color: $color-background;
-        box-shadow: 0 6px 6px darken($color-background,40%);
+        @extend %shadow;
         margin-bottom: 50px;
         /*background: linear-gradient(to top, $color-primary)*/
+        h3{
+        color: $color-background;
+        font-size: 15px;
+
+        }
     }
 }
 
@@ -39,35 +41,30 @@ nav {
     flex-direction: column;
     padding: 60px 0;
     .bloc-fonction{
+        @extend %shadow;
+        @extend %courbe-fine;
         background-color: darken($color-background,5%);
         display: flex;
         align-items: center;
         margin: 12px 0;
-        position: relative;
         left: 12px;
         height:60px; 
         width:90%;
-        border-radius:15px;
-        box-shadow: 0 6px 6px darken($color-background,40%);
         i{
             color: darken($color-background,40%);
             padding-right: 22px;
         }
         .chiffre{
+            @extend %center;
+            @extend %courbe-fine;
+            width: 24px;height: 24px;
+            left:-12px ;
             background-color: $color-primary;
             color: $color-background;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            left:-12px ;
         }
         div{
             font-weight: bold;
-            font-size: small;
+            font-size: 12px;
         }
     }
 }
@@ -78,16 +75,25 @@ section{
     a{
         display: block;
         margin: 25px 0;
-        box-shadow: 0 6px 6px darken($color-background,40%);
-        border-radius: 20px;
+        @extend %shadow;
+        @extend %courbe-fine;
         overflow: hidden;
         .new{
-            display: none;
+            height: 30px;
+            width: 70px;
+            @extend %center;
+            background-color: $color-tertiary;
+            margin-top: 10px;
+            margin-left: 70%;
             position: absolute;
+            h3{
+                font-size: 15px;
+                color: darken($color-tertiary, 40%);
+            }
         }
         img{
             object-fit: cover;
-            width: 100%;
+            @extend %max-width;
             height: 175px;
         }
         .texte-boite{
@@ -108,13 +114,13 @@ section{
     text-align: center;
     display: block;
     .yes{
-        position: relative;
+        @extend %relative;
         color: $color-primary;
         z-index: 2;
         opacity: 1;
     }
     .no{
-        position: relative;
+        @extend %relative;
         top: -30px;
         color: $color-font;
     }

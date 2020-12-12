@@ -1,18 +1,17 @@
 .img-background{
-    width: 100%;
+    @extend %max-width;
     object-fit: cover;
     height:250px;
 }
 
 .menu{
-    width: 100%;
+    @extend %max-width;
+    @extend %relative;
     border-radius: 50px 50px 0 0;
-    position: relative;
     top: -50px;
     background-color: darken($color-background,5%);
     .nom-resto{
-        align-items: center;
-        display: flex;
+        @extend %center;
         h1{
             font-size: 25px;
             width: 240px;
@@ -23,28 +22,28 @@
         margin: 40px 20px;
         +div{
             border: 2px solid $color-tertiary;
-            position: relative;
+            @extend %relative;
             top: -35px;
             left: 20px;
             width: 40px;
         }
     }
     .bloc{
+        @extend %shadow;
+        @extend %courbe-fine;
         background-color: $color-background;
         width: 280px;
         overflow: hidden;
         height: auto;
         display: flex;
         margin: 10px;
-        border-radius: 20px;
-        box-shadow: 0 6px 6px darken($color-background,40%);
         .sous-bloc{
             margin: 0;
             display:flex;
             min-width: 355px;
             .nom{
                 margin: 10px 0 0 10px;
-                width: 225px; /*variable de 165 à 225px*/
+                width: 166px; /*variable de 166 à 226px*/
                 height: auto;
                 font-size: 12px;
                 h3{
@@ -63,17 +62,15 @@
                 display: flex;
                 flex-direction: row;
                 align-items: flex-end;
-                position: relative;
-                font-size: small;
+                @extend %relative;
+                font-size: 12px;
                 h3{
                     padding-right: 20px;
                     padding-bottom: 10px;
                 }
                 i{
                     height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @extend %center;
                     width: 60px;
                     font-size: 25px;
                     color: $color-background;

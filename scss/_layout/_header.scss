@@ -1,11 +1,9 @@
 header{
+    @extend %center;
+    @extend %shadow;
+    @extend %max-width;
+    @extend %relative;
     height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 6px darken($color-background,40%) ;
-    position: relative;
     a{
         height: 37.5px;
         width: 50px;
