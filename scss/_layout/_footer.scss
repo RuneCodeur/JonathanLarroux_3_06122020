@@ -1,9 +1,9 @@
 footer{
     @extend %max-width;
-    background-color: darken($color-background,80%);
-    padding: 25px 0 25px 0;
     display: flex;
     flex-direction: column;
+    padding: 25px 0 25px 0;
+    background-color: darken($color-background,80%);
     div{
         margin: 10px 20px;
         h1{
@@ -13,8 +13,8 @@ footer{
     }
     
     a {
-        color: $color-background;
         margin: 10px 20px;
+        color: $color-background;
         i{
             color: $color-background;
         }

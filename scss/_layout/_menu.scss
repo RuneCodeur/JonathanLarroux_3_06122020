@@ -1,77 +1,75 @@
 .img-background{
     @extend %max-width;
-    object-fit: cover;
     height:250px;
+    object-fit: cover;
 }
 
 .menu{
     @extend %max-width;
     @extend %relative;
-    border-radius: 50px 50px 0 0;
     top: -50px;
+    border-radius: 50px 50px 0 0;
     background-color: darken($color-background,5%);
     .nom-resto{
         @extend %center;
         h1{
-            font-size: 25px;
             width: 240px;
+            font-size: 25px;
             margin: 25px 10px;
         }
     }
     .titre{
         margin: 40px 20px;
         +div{
-            border: 2px solid $color-tertiary;
             @extend %relative;
+            width: 40px;
             top: -35px;
             left: 20px;
-            width: 40px;
+            border: 2px solid $color-tertiary;
         }
     }
     .bloc{
         @extend %shadow;
         @extend %courbe-fine;
-        background-color: $color-background;
         width: 280px;
+        display: flex;
         overflow: hidden;
         height: auto;
-        display: flex;
         margin: 10px;
+        background-color: $color-background;
         .sous-bloc{
-            margin: 0;
-            display:flex;
             min-width: 355px;
+            display:flex;
+            margin: 0;
             .nom{
-                margin: 10px 0 0 10px;
                 width: 166px; /*variable de 166 à 226px*/
                 height: auto;
                 font-size: 12px;
+                margin: 10px 0 0 10px;
                 h3{
-                    margin: 5px 10px 10px 5px;
                     width: 205px;
+                    margin: 5px;
                 }
                 p{
-                    margin: 0;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    margin: 5px 5px 10px 5px;
                     white-space:nowrap;
+                    margin: 5px 10px 10px 5px;
                 }
             }
             .effect{
+                @extend %relative;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-end;
-                @extend %relative;
                 font-size: 12px;
                 h3{
                     padding-right: 20px;
-                    padding-bottom: 10px;
+                    padding-bottom: 9px;
                 }
                 i{
-                    height: 100%;
                     @extend %center;
-                    width: 60px;
+                    width: 60px; height: 100%;
                     font-size: 25px;
                     color: $color-background;
                     background-color: $color-tertiary;
@@ -83,12 +81,11 @@
         }
     }
     .commander{
-        background-color: $color-primary;
-        color: $color-background;
+        width: 180px; height: 50px;
         border: none;
         margin-top: 30px;
-        height: 50px;
-        width: 180px;
         border-radius: 25px;
+        background: linear-gradient($color-secondary, $color-primary);
+        color: $color-background;
     }
 }
