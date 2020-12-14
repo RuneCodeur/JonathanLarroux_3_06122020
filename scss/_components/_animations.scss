@@ -1,5 +1,8 @@
 .description a :hover, .commander:hover{
     opacity: 0.8;
     box-shadow: 0 3px 10px darken($color-background,100%);
-    transition-duration: 0.4s;
+    border: none;
+}
+.bloc input:checked + .sous-bloc .nom {
+    width: 166px;
 }
