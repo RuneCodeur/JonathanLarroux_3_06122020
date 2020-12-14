@@ -87,5 +87,6 @@
         border-radius: 25px;
         background: linear-gradient($color-secondary, $color-primary);
         color: $color-background;
+        transition-duration: 0.4s;
     }
 }

@@ -14,23 +14,21 @@
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
-    background-color:darken($color-background,5%);
     div{
         width: 90%;
         margin: 10px;
         text-align: center;
     }
-    a{
+    h3{
         @extend %shadow;
-        padding: 20px;
-        margin-bottom: 50px;
+        text-align: center;
+        width: 200px; height: 35px;
         border-radius: 50px;
-        background: linear-gradient($color-secondary, $color-primary);
-        h3{
+        padding-top: 15px;
         font-size: 15px;
+        background: linear-gradient($color-secondary, $color-primary);
         color: $color-background;
-
-        }
+        transition-duration: 0.4s;
     }
 }
 
@@ -116,8 +114,8 @@ section{
         font-size: 28px;
         padding: 0 5px;
         background-image: linear-gradient($color-primary, $color-secondary);
-        -webkit-background-clip: text;
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     .no{
