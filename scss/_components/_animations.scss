@@ -3,10 +3,23 @@
     box-shadow: 0 3px 10px darken($color-background,100%);
     border: none;
 }
+
 .bloc input:checked + .sous-bloc .nom {
     width: 166px;
 }
+
 .bloc input:checked +.sous-bloc i{
     transform: rotate(1turn);
     transition-duration: 0.5s;
+}
+
+@keyframes menu-arrive{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+    100%{
+        opacity: 1;
+    }
 }

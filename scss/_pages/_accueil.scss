@@ -66,8 +66,9 @@ nav {
 }
 
 section{
-    padding: 60px 10px;
+    padding: 60px 0;
     background-color: darken($color-background,5%);
+    width: 100%;
     a{
         @extend %shadow;
         @extend %courbe-fine;
