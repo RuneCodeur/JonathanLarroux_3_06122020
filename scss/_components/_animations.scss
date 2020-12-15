@@ -6,3 +6,7 @@
 .bloc input:checked + .sous-bloc .nom {
     width: 166px;
 }
+.bloc input:checked +.sous-bloc i{
+    transform: rotate(1turn);
+    transition-duration: 0.5s;
+}

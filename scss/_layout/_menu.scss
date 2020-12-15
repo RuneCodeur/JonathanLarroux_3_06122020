@@ -68,12 +68,14 @@
                     padding-right: 20px;
                     padding-bottom: 9px;
                 }
-                i{
+                .validation{
                     @extend %center;
                     width: 60px; height: 100%;
+                    background-color: $color-tertiary;
+                }
+                i{
                     font-size: 25px;
                     color: $color-background;
-                    background-color: $color-tertiary;
                 }
             }
         }input{
