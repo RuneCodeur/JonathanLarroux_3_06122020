@@ -1,0 +1,44 @@
+
+@keyframes menu-arrive{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes loading{
+    0%{ 
+        transform: rotate(0.65turn);
+
+    }
+    100%{
+        transform: rotate(2.65turn);
+
+    }
+}
+
+@keyframes load-end{
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-300%);
+        opacity: 1;
+    }
+}
+
+@keyframes round-bump{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(0);
+    }
+}
