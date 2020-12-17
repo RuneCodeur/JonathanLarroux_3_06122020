@@ -17,6 +17,10 @@
             font-size: 25px;
             margin: 25px 10px;
         }
+        .checkbox{
+            top: 0;
+            left: 0;
+        }
     }
     .titre{
         margin: 40px 20px;
@@ -31,14 +35,17 @@
     .bloc{
         @extend %shadow;
         @extend %courbe-fine;
-        animation: menu-arrive 2s;
         width: 280px;
+        opacity: 0;
+        animation-name: menu-arrive;
+        animation-duration: 1s;
         display: flex;
         position: relative;
         overflow: hidden;
         height: auto;
         margin: 10px;
         background-color: $color-background;
+        animation-fill-mode: forwards;
         .sous-bloc{
             min-width: 355px;
             display:flex;
@@ -49,14 +56,18 @@
                 font-size: 12px;
                 margin: 10px 0 0 10px;
                 transition-duration: 0.4s;
-                h3{
+                .nom-plat{
+                    display: flex;
                     width: 205px;
                     margin: 5px;
                 }
-                p{
+                .def-plat{
+                    display: flex;
+                    display: block;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space:nowrap;
+                    font-size: 11px;
                     margin: 5px 10px 10px 5px;
                 }
             }
@@ -66,7 +77,7 @@
                 flex-direction: row;
                 align-items: flex-end;
                 font-size: 12px;
-                h3{
+                .prix-plat{
                     padding-right: 20px;
                     padding-bottom: 9px;
                 }
@@ -85,6 +96,7 @@
         }
     }
     .commander{
+        @extend %shadow;
         width: 180px; height: 50px;
         border: none;
         margin-top: 30px;
@@ -92,6 +104,5 @@
         background: linear-gradient($color-secondary, $color-primary);
         color: $color-background;
         transition-duration: 0.4s;
-        @extend %shadow;
     }
 }

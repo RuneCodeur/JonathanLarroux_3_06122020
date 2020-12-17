@@ -1,37 +1,12 @@
-@font-face { font-family: "roboto"; src: url("../ressource/typo/roboto.otf") format("otf'"), url("../ressource/typo/roboto.svg") format("svg"), url("../ressource/typo/roboto.ttf") format("ttf"), url("../ressource/typo/roboto.woff") format("woff"); }
-
-@font-face { font-family: "roboto-bold"; src: url("../ressource/typo/roboto-bold.otf") format("otf"), url("../ressource/typo/roboto-bold.svg") format("svg"), url("../ressource/typo/roboto-bold.ttf") format("ttf"), url("../ressource/typo/roboto-bold.woff") format("woff"); }
-
-@font-face { font-family: "roboto-bolder"; src: url("../ressource/typo/roboto-bolder.otf") format("otf"), url("../ressource/typo/roboto-bolder.svg") format("svg"), url("../ressource/typo/roboto-bolder.ttf") format("ttf"), url("../ressource/typo/roboto-bolder.woff") format("woff"); }
-
-@font-face { font-family: "shrikhand"; src: url("../ressource/typo/shrikhand.otf") format("otf"), url("../ressource/typo/shrikhand.svg") format("svg"), url("../ressource/typo/shrikhand.ttf") format("ttf"), url("../ressource/typo/shrikhand.woff") format("woff"); }
-
-header, .menu .nom-resto, .menu .bloc .sous-bloc .effect .validation, .localisator, nav .bloc-fonction .chiffre, section a .new { display: flex; justify-content: center; align-items: center; }
-
-header, .menu, .menu .titre + div, .menu .bloc .sous-bloc .effect, .checkbox .yes, .checkbox .no { position: relative; }
-
-header, .menu .bloc, .menu .commander, .description h3, nav .bloc-fonction, section a { box-shadow: 0 3px 6px #999999; }
-
-header, footer, .img-background, .menu, .localisator, section a img { width: 100%; }
-
-.menu .bloc, nav .bloc-fonction, nav .bloc-fonction .chiffre, section a { position: relative; border-radius: 15px; }
-
-nav .bloc-fonction .font--1 { color: #999999; }
-
-nav .bloc-fonction .font--2 { color: #999999; }
-
-nav .bloc-fonction .font--3 { color: #9356DC; }
-
-/*for (let i=0; i*/
 body, html { width: 100%; background-color: #ffffff; margin: 0%; display: flex; flex-direction: column; align-items: center; }
 
-* { font-family: roboto; color: #000000; text-decoration: none; }
+* { font-family: 'Roboto', sans-serif; color: #000000; text-decoration: none; }
 
-h1 { font-family: shrikhand; font-weight: normal; margin: 0; }
+h1 { font-family: 'Shrikhand', cursive; font-weight: normal; margin: 0; }
 
-h2 { font-family: roboto-bolder; margin: 0; }
+h2 { font-weight: bold; margin: 0; }
 
-h3 { font-family: roboto-bold; margin: 0; }
+h3, .nom-plat, .prix-plat { font-weight: bolder; font-size: 14px; margin: 0; }
 
 fieldset { border: none; margin: 0%; padding: 0%; display: flex; flex-direction: column; align-items: center; }
 
@@ -59,23 +34,25 @@ footer a i { color: #ffffff; }
 
 .menu .nom-resto h1 { width: 240px; font-size: 25px; margin: 25px 10px; }
 
+.menu .nom-resto .checkbox { top: 0; left: 0; }
+
 .menu .titre { margin: 40px 20px; }
 
 .menu .titre + div { width: 40px; top: -35px; left: 20px; border: 2px solid #99E2D0; }
 
-.menu .bloc { animation: menu-arrive 2s; width: 280px; display: flex; position: relative; overflow: hidden; height: auto; margin: 10px; background-color: #ffffff; }
+.menu .bloc { width: 280px; opacity: 0; animation-name: menu-arrive; animation-duration: 1s; display: flex; position: relative; overflow: hidden; height: auto; margin: 10px; background-color: #ffffff; animation-fill-mode: forwards; }
 
 .menu .bloc .sous-bloc { min-width: 355px; display: flex; margin: 0; }
 
 .menu .bloc .sous-bloc .nom { width: 230px; height: auto; font-size: 12px; margin: 10px 0 0 10px; transition-duration: 0.4s; }
 
-.menu .bloc .sous-bloc .nom h3 { width: 205px; margin: 5px; }
+.menu .bloc .sous-bloc .nom .nom-plat { display: flex; width: 205px; margin: 5px; }
 
-.menu .bloc .sous-bloc .nom p { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 5px 10px 10px 5px; }
+.menu .bloc .sous-bloc .nom .def-plat { display: flex; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; margin: 5px 10px 10px 5px; }
 
 .menu .bloc .sous-bloc .effect { display: flex; flex-direction: row; align-items: flex-end; font-size: 12px; }
 
-.menu .bloc .sous-bloc .effect h3 { padding-right: 20px; padding-bottom: 9px; }
+.menu .bloc .sous-bloc .effect .prix-plat { padding-right: 20px; padding-bottom: 9px; }
 
 .menu .bloc .sous-bloc .effect .validation { width: 60px; height: 100%; background-color: #99E2D0; }
 
@@ -107,7 +84,9 @@ nav .bloc-fonction div { font-weight: bold; font-size: 12px; }
 
 section { padding: 60px 0; background-color: #f2f2f2; width: 100%; }
 
-section a { width: 280px; display: block; overflow: hidden; margin: 25px 0; }
+section h2 { margin-bottom: 40px; }
+
+section a { width: 280px; display: block; overflow: hidden; margin: -10px 0; }
 
 section a .new { width: 70px; height: 30px; position: absolute; margin-top: 10px; margin-left: 70%; background-color: #99E2D0; }
 
@@ -119,11 +98,47 @@ section a .texte-boite { display: flex; justify-content: space-between; }
 
 section a .texte-boite > div { padding: 15px; }
 
-.checkbox { width: 50px; height: 50px; display: block; text-align: center; padding-top: 15px; }
+.heart { width: 50px; height: 50px; top: -55px; left: 110px; display: block; position: relative; text-align: center; padding-top: 15px; }
 
-.checkbox .yes { z-index: 2; opacity: 1; font-size: 28px; padding: 0 5px; background-image: linear-gradient(#9356DC, #FF79DA); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.heart .yes { z-index: 2; opacity: 0; font-size: 28px; padding: 0 5px; color: #9356DC; transition-duration: 0.3s; transform: scale(0); }
 
-.checkbox .no { font-size: 25px; top: -27px; color: #000000; }
+.heart .no { font-size: 25px; top: -27px; color: #000000; }
+
+header, .menu .nom-resto, .menu .bloc .sous-bloc .effect .validation, .localisator, nav .bloc-fonction .chiffre, section a .new { display: flex; justify-content: center; align-items: center; }
+
+header, .menu, .menu .titre + div, .menu .bloc .sous-bloc .effect, .heart .yes, .heart .no { position: relative; }
+
+header, .menu .bloc, .menu .commander, .description h3, nav .bloc-fonction, section a { box-shadow: 0 3px 6px #999999; }
+
+header, footer, .img-background, .menu, .localisator, section a img { width: 100%; }
+
+.menu .bloc, nav .bloc-fonction, nav .bloc-fonction .chiffre, section a { position: relative; border-radius: 15px; }
+
+nav .bloc-fonction .font--1 { color: #999999; }
+
+nav .bloc-fonction .font--2 { color: #999999; }
+
+nav .bloc-fonction .font--3 { color: #9356DC; }
+
+.anim--1 { animation-delay: 400ms; }
+
+.anim--2 { animation-delay: 800ms; }
+
+.anim--3 { animation-delay: 1200ms; }
+
+.anim--4 { animation-delay: 1600ms; }
+
+.anim--5 { animation-delay: 2000ms; }
+
+.anim--6 { animation-delay: 2400ms; }
+
+.anim--7 { animation-delay: 2800ms; }
+
+.anim--8 { animation-delay: 3200ms; }
+
+.anim--9 { animation-delay: 3600ms; }
+
+.anim--10 { animation-delay: 4000ms; }
 
 .description a :hover, .commander:hover { opacity: 0.8; box-shadow: 0 3px 10px black; border: none; }
 
@@ -134,4 +149,6 @@ section a .texte-boite > div { padding: 15px; }
 @keyframes menu-arrive { 0% { opacity: 0;
     transform: translateY(30px); }
   100% { opacity: 1; } }
+
+.heart :checked + span .yes { opacity: 1; transform: scale(1); }
 /*# sourceMappingURL=style.css.map */

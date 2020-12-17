@@ -69,13 +69,16 @@ section{
     padding: 60px 0;
     background-color: darken($color-background,5%);
     width: 100%;
+    h2{
+        margin-bottom: 40px;
+    }
     a{
         @extend %shadow;
         @extend %courbe-fine;
         width: 280px;
         display: block;
         overflow: hidden;
-        margin: 25px 0;
+        margin: -10px 0;
         .new{
             @extend %center;
             width: 70px; height: 30px;
@@ -103,21 +106,23 @@ section{
     }
 }
 
-.checkbox{
+.heart{
     width: 50px; height: 50px;
+    top: -55px;
+    left: 110px;
     display: block;
+    position: relative;
     text-align: center;
     padding-top: 15px;
     .yes{
         @extend %relative;
         z-index: 2;
-        opacity: 1;
+        opacity: 0;
         font-size: 28px;
         padding: 0 5px;
-        background-image: linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color:$color-primary;
+        transition-duration: 0.3s;
+        transform: scale(0)
     }
     .no{
         @extend %relative;
