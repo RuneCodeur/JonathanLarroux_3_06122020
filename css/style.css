@@ -12,11 +12,11 @@ fieldset { border: none; margin: 0%; padding: 0%; display: flex; flex-direction:
 
 fieldset .checkbox input { display: none; }
 
-.loading { position: fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; top: 0; left: 0; width: 100%; height: 100%; padding-bottom: 200%; z-index: 1; background-color: #ffffff; animation: load-end; animation-delay: 5s; animation-duration: 3s; animation-fill-mode: both; animation-timing-function: ease-out; opacity: 0; }
+.loading { position: fixed; flex-direction: column; height: 100%; padding-bottom: 200%; top: 0; left: 0; z-index: 1; opacity: 0; background-color: #ffffff; animation: load-end; animation-delay: 3s; animation-duration: 3s; animation-fill-mode: both; animation-timing-function: ease-out; }
 
-.loading .big-round { display: flex; flex-wrap: wrap; justify-content: center; width: 70px; height: 70px; animation: loading; animation-duration: 2s; animation-iteration-count: infinite; animation-timing-function: linear; margin-bottom: 50px; }
+.loading .big-round { width: 70px; height: 70px; display: flex; flex-wrap: wrap; justify-content: center; animation: loading; animation-duration: 2s; animation-iteration-count: infinite; animation-timing-function: linear; }
 
-.loading .big-round .round-1, .loading .big-round .round-2, .loading .big-round .round-3 { animation: round-bump; animation-fill-mode: both; animation-duration: 1s; animation-iteration-count: infinite; animation-timing-function: linear; position: relative; margin: 5px; width: 25px; height: 25px; border-radius: 100%; }
+.loading .big-round .round-1, .loading .big-round .round-2, .loading .big-round .round-3 { width: 25px; height: 25px; margin: 5px; border-radius: 100%; animation: round-bump; animation-fill-mode: both; animation-duration: 1s; animation-iteration-count: infinite; animation-timing-function: linear; }
 
 .loading .big-round .round-1 { top: 5px; right: 4px; background-color: #9356DC; }
 
@@ -37,7 +37,7 @@ fieldset .checkbox input { display: none; }
     opacity: 1; } }
 
 @keyframes round-bump { 0% { transform: scale(0); }
-  50% { transform: scale(1); }
+  50% { transform: scale(1.5); }
   100% { transform: scale(0); } }
 
 header { height: 60px; }
@@ -132,13 +132,13 @@ section a .texte-boite > div { padding: 15px; }
 
 .heart .no { font-size: 25px; top: -27px; color: #000000; }
 
-header, .menu .nom-resto, .menu .bloc .sous-bloc .effect .validation, .localisator, nav .bloc-fonction .chiffre, section a .new { display: flex; justify-content: center; align-items: center; }
+.loading, header, .menu .nom-resto, .menu .bloc .sous-bloc .effect .validation, .localisator, nav .bloc-fonction .chiffre, section a .new { display: flex; justify-content: center; align-items: center; }
 
 header, .menu, .menu .titre + div, .menu .bloc .sous-bloc .effect, .heart .yes, .heart .no { position: relative; }
 
 header, .menu .bloc, .menu .commander, .description h3, nav .bloc-fonction, section a { box-shadow: 0 3px 6px #999999; }
 
-header, footer, .img-background, .menu, .localisator, section a img { width: 100%; }
+.loading, header, footer, .img-background, .menu, .localisator, section a img { width: 100%; }
 
 .menu .bloc, nav .bloc-fonction, nav .bloc-fonction .chiffre, section a { position: relative; border-radius: 15px; }
 

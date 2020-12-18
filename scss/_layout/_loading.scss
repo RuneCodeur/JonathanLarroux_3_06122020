@@ -1,45 +1,39 @@
 
 .loading{
+    @extend %center;
+    @extend %max-width;
     position: fixed;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
     padding-bottom: 200%;
+    top: 0;
+    left: 0;
     z-index: 1;
+    opacity: 0;
     background-color: $color-background;
     animation: load-end;
-    animation-delay: 5s;
+    animation-delay: $loading-duration;
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
-    opacity: 0;
     .big-round{
+        width: 70px; height: 70px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 70px;
-        height: 70px;
         animation: loading;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-        margin-bottom: 50px;
         .round-1, .round-2, .round-3{
+            width: 25px; height: 25px;
+            margin: 5px;
+            border-radius: 100%;
             animation: round-bump;
             animation-fill-mode: both;
             animation-duration: 1s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
-            position: relative;
-            margin: 5px;
-            width: 25px;
-            height: 25px;
-            border-radius: 100%;
         }
         .round-1{
             top: 5px;
