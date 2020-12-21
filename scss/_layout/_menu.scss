@@ -22,87 +22,94 @@
             left: 0;
         }
     }
-    .titre{
-        margin: 40px 20px;
-        +div{
-            @extend %relative;
-            width: 40px;
-            top: -35px;
-            left: 20px;
-            border: 2px solid $color-tertiary;
-        }
-    }
-    .bloc{
-        @extend %shadow;
-        @extend %courbe-fine;
-        width: 280px;
-        opacity: 0;
-        animation-name: menu-arrive;
-        animation-duration: 1s;
+    .ensemble-plat{
         display: flex;
-        position: relative;
-        overflow: hidden;
-        height: auto;
-        margin: 10px;
-        background-color: $color-background;
-        animation-fill-mode: forwards;
-        .sous-bloc{
-            min-width: 355px;
-            display:flex;
-            margin: 0;
-            .nom{
-                width: 230px;
-                height: auto;
-                font-size: 12px;
-                margin: 10px 0 0 10px;
-                transition-duration: 0.4s;
-                .nom-plat{
-                    display: flex;
-                    width: 205px;
-                    margin: 5px;
-                }
-                .def-plat{
-                    display: flex;
-                    display: block;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space:nowrap;
-                    font-size: 11px;
-                    margin: 5px 10px 10px 5px;
-                }
-            }
-            .effect{
+        flex-wrap: wrap;
+        justify-content:space-around;
+        width: 80%;
+    }
+        .titre{
+            margin: 40px 20px;
+            +div{
                 @extend %relative;
-                display: flex;
-                flex-direction: row;
-                align-items: flex-end;
-                font-size: 12px;
-                .prix-plat{
-                    padding-right: 20px;
-                    padding-bottom: 9px;
+                width: 40px;
+                top: -35px;
+                left: 20px;
+                border: 2px solid $color-tertiary;
+            }
+        }
+        .bloc{
+            @extend %shadow;
+            @extend %courbe-fine;
+            width: 280px;
+            opacity: 0;
+            animation-name: menu-arrive;
+            animation-duration: 1s;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            height: auto;
+            margin: 10px;
+            background-color: $color-background;
+            animation-fill-mode: forwards;
+            .sous-bloc{
+                min-width: 355px;
+                display:flex;
+                margin: 0;
+                .nom{
+                    width: 230px;
+                    height: auto;
+                    font-size: 12px;
+                    margin: 10px 0 0 10px;
+                    transition-duration: 0.4s;
+                    .nom-plat{
+                        display: flex;
+                        width: 205px;
+                        margin: 5px;
+                    }
+                    .def-plat{
+                        display: flex;
+                        display: block;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space:nowrap;
+                        font-size: 11px;
+                        margin: 5px 10px 10px 5px;
+                    }
                 }
-                .validation{
-                    @extend %center;
-                    width: 60px; height: 100%;
-                    background-color: $color-tertiary;
-                }
-                i{
-                    font-size: 25px;
-                    color: $color-background;
+                .effect{
+                    @extend %relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    font-size: 12px;
+                    .prix-plat{
+                        padding-right: 20px;
+                        padding-bottom: 9px;
+                    }
+                    .validation{
+                        @extend %center;
+                        width: 60px; height: 100%;
+                        background-color: $color-tertiary;
+                    }
+                    i{
+                        font-size: 25px;
+                        color: $color-background;
+                    }
                 }
             }
-        }input{
-            display: none;
+            input{
+                display: none;
+            }
         }
-    }
-    .commander{
-        @extend %shadow;
-        width: 180px; height: 50px;
-        border: none;
-        margin-top: 30px;
-        border-radius: 25px;
-        background: linear-gradient($color-secondary, $color-primary);
-        color: $color-background;
-        transition-duration: 0.4s;
-    }
+        .commander{
+            @extend %shadow;
+            width: 180px; height: 50px;
+            border: none;
+            margin-top: 30px;
+            border-radius: 25px;
+            background: linear-gradient($color-secondary, $color-primary);
+            color: $color-background;
+            transition-duration: 0.4s;
+        }   
 }

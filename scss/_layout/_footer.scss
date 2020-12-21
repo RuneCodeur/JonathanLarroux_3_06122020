@@ -11,12 +11,17 @@ footer{
         color: $color-background;
         }
     }
-    
-    a {
-        margin: 10px 20px;
-        color: $color-background;
-        i{
+    .ensemble-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        a {
+            width: 250px;
+            margin: 10px 20px;
             color: $color-background;
+            i{
+                color: $color-background;
+            }
         }
     }
 }

@@ -4,6 +4,9 @@ header{
     @extend %max-width;
     @extend %relative;
     height: 60px;
+    img{
+        height: 25px;
+    }
     a{
         width: 50px; height: 37.5px;
         text-align: center;
@@ -12,8 +15,23 @@ header{
         left: 0;
         top: 0;
         i{
-        font-size: 20px;
-        color: darken($color-background, 75%);
+            font-size: 20px;
+            color: darken($color-background, 75%);
+        }
+    }
+}
+
+@media screen and (min-width: $responsive){
+    header{
+        height: 100px;
+        img{
+            height: 50px;
+        }
+        a{
+            width: 100px; height: 75px;
+            i{
+                font-size: 50px;
+                }
         }
     }
 }
