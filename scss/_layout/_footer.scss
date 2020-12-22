@@ -1,26 +1,24 @@
 footer{
     @extend %max-width;
-    display: flex;
-    flex-direction: column;
+    @extend %column;
     padding: 25px 0 25px 0;
     background-color: darken($color-background,80%);
     div{
         margin: 10px 20px;
         h1{
         font-size: 20px;
-        color: $color-background;
+        @extend %font-is-background;
         }
     }
     .ensemble-footer{
-        display: flex;
-        flex-wrap: wrap;
+        @extend %flex;
         justify-content: left;
         a {
+            @extend %font-is-background;
             width: 250px;
             margin: 10px 20px;
-            color: $color-background;
             i{
-                color: $color-background;
+                @extend %font-is-background;
             }
         }
     }

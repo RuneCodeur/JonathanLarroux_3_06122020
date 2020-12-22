@@ -23,8 +23,7 @@
         }
     }
     .ensemble-plat{
-        display: flex;
-        flex-wrap: wrap;
+        @extend %flex;
         justify-content:space-around;
         width: 80%;
     }
@@ -41,21 +40,21 @@
         .bloc{
             @extend %shadow;
             @extend %courbe-fine;
+            @extend %color-background;
+            @extend %flex;
             width: 280px;
             opacity: 0;
             animation-name: menu-arrive;
             animation-duration: 1s;
-            display: flex;
             position: relative;
             overflow: hidden;
             height: auto;
             margin: 10px;
-            background-color: $color-background;
             animation-fill-mode: forwards;
             .sous-bloc{
+                @extend %flex;
+                @extend %no-marge;
                 min-width: 355px;
-                display:flex;
-                margin: 0;
                 .nom{
                     width: 230px;
                     height: auto;
@@ -63,23 +62,23 @@
                     margin: 10px 0 0 10px;
                     transition-duration: 0.4s;
                     .nom-plat{
-                        display: flex;
+                        @extend %flex;
                         width: 205px;
                         margin: 5px;
                     }
                     .def-plat{
-                        display: flex;
+                        @extend %flex;
                         display: block;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                        white-space:nowrap;
+                        white-space: nowrap;
                         font-size: 11px;
                         margin: 5px 10px 10px 5px;
                     }
                 }
                 .effect{
                     @extend %relative;
-                    display: flex;
+                    @extend %flex;
                     flex-direction: row;
                     align-items: flex-end;
                     font-size: 12px;
@@ -93,8 +92,8 @@
                         background-color: $color-tertiary;
                     }
                     i{
+                        @extend %font-is-background;
                         font-size: 25px;
-                        color: $color-background;
                     }
                 }
             }
@@ -104,12 +103,12 @@
         }
         .commander{
             @extend %shadow;
+            @extend %font-is-background;
             width: 180px; height: 50px;
             border: none;
             margin-top: 30px;
             border-radius: 25px;
             background: linear-gradient($color-secondary, $color-primary);
-            color: $color-background;
             transition-duration: 0.4s;
         }   
 }

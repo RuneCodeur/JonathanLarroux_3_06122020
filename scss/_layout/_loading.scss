@@ -2,24 +2,23 @@
 .loading{
     @extend %center;
     @extend %max-width;
+    @extend %color-background;
+    @extend %column;
     position: fixed;
-    flex-direction: column;
     height: 100%;
     padding-bottom: 200%;
     top: 0;
     left: 0;
     z-index: 3;
     opacity: 0;
-    background-color: $color-background;
     animation: load-end;
     animation-delay: $loading-duration;
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
     .big-round{
+        @extend %flex;
         width: 70px; height: 70px;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         animation: loading;
         animation-duration: 2s;

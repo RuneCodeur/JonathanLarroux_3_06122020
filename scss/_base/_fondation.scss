@@ -1,12 +1,11 @@
 
 
 body, html{
-    width: 100%;
-    background-color: $color-background;
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %color-background;
+    @extend %no-marge;
+    @extend %column;
+    @extend %align-item;
+    @extend %max-width;
 }
 
 *{
@@ -16,29 +15,29 @@ body, html{
 }
 
 h1{
+    @extend %no-marge;
     font-family: 'Shrikhand', cursive;
     font-weight: normal;
-    margin: 0;
 }
 
 h2{
+    @extend %no-marge;
     font-weight: bold;
-    margin: 0;
 }
 
 h3, .nom-plat, .prix-plat{
+    @extend %no-marge;
     font-weight: bolder;
     font-size: 14px;
-    margin: 0;
 }
 
 fieldset{
-    border: none;
-    margin: 0%;
+    @extend %no-marge;
+    @extend %column;
+    @extend %align-item;
+    text-align: left;
     padding: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: none;
     .checkbox input{
         display: none;
     }
