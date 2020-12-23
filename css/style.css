@@ -1,24 +1,24 @@
-.loading, header, .menu .nom-resto, .menu .bloc .sous-bloc .effect .validation, .localisator, nav .bloc-fonction .chiffre, section .bloc-resto a .new { display: flex; justify-content: center; align-items: center; }
+.loading, header, .localisator, nav .bloc-fonction .chiffre, section .bloc-resto a .new, .menu .nom-resto, .menu .bloc .sous-bloc .effect .validation { display: flex; justify-content: center; align-items: center; }
 
-header, .menu, .menu .titre + div, .menu .bloc .sous-bloc .effect, .heart .yes, .heart .no { position: relative; }
+header, .heart .yes, .heart .no, .menu, .menu .titre + div, .menu .bloc .sous-bloc .effect { position: relative; }
 
-header, .menu .bloc, .menu .commander, .description h3, nav .bloc-fonction, section .bloc-resto a { box-shadow: 0 3px 6px #999999; }
+header, .description h3, nav .bloc-fonction, section .bloc-resto a, .menu .bloc, .menu .commander { box-shadow: 0 3px 6px #999999; }
 
-body, html, .loading, header, footer, .img-background, .menu, .localisator, section .bloc-resto a img { width: 100%; }
+body, html, .loading, header, .localisator, section .bloc-resto a img, footer, footer .ensemble-footer, .img-background, .menu { width: 100%; }
 
-.menu .bloc, nav .bloc-fonction, nav .bloc-fonction .chiffre, section .bloc-resto a { position: relative; border-radius: 15px; }
+nav .bloc-fonction, nav .bloc-fonction .chiffre, section .bloc-resto a, .menu .bloc { position: relative; border-radius: 15px; }
 
 body, html, h1, h2, h3, .nom-plat, .prix-plat, fieldset, .menu .bloc .sous-bloc { margin: 0; }
 
 body, html, .loading, .menu .bloc { background-color: #ffffff; }
 
-.loading .big-round, footer .ensemble-footer, .menu .ensemble-plat, .menu .bloc, .menu .bloc .sous-bloc, .menu .bloc .sous-bloc .nom .nom-plat, .menu .bloc .sous-bloc .nom .def-plat, .menu .bloc .sous-bloc .effect, nav .bloc-fonction, section .bloc-resto a .texte-boite { display: flex; flex-wrap: wrap; }
+.loading .big-round, nav .bloc-fonction, section .bloc-resto a .texte-boite, footer, footer .ensemble-footer, .menu .ensemble-plat, .menu .bloc, .menu .bloc .sous-bloc, .menu .bloc .sous-bloc .nom .nom-plat, .menu .bloc .sous-bloc .nom .def-plat, .menu .bloc .sous-bloc .effect { display: flex; flex-wrap: wrap; }
 
-body, html, fieldset, .loading, footer, .description, nav { display: flex; flex-direction: column; }
+body, html, fieldset, .loading, .description, nav { display: flex; flex-direction: column; }
 
 body, html, fieldset, header a, .description, .description div, nav, nav .bloc-fonction { align-items: center; text-align: center; }
 
-footer div h1, footer .ensemble-footer a, footer .ensemble-footer a i, .menu .bloc .sous-bloc .effect i, .menu .commander, nav .bloc-fonction .chiffre { color: #ffffff; }
+nav .bloc-fonction .chiffre, footer div h1, footer .ensemble-footer a, footer .ensemble-footer a i, .menu .bloc .sous-bloc .effect i, .menu .commander { color: #ffffff; }
 
 nav .bloc-fonction .font--1 { color: #999999; }
 
@@ -99,52 +99,6 @@ header a i { font-size: 20px; color: #404040; }
   header a { width: 100px; height: 75px; }
   header a i { font-size: 50px; } }
 
-footer { padding: 25px 0 25px 0; background-color: #333333; }
-
-footer div { margin: 10px 20px; }
-
-footer div h1 { font-size: 20px; }
-
-footer .ensemble-footer { justify-content: left; }
-
-footer .ensemble-footer a { width: 250px; margin: 10px 20px; }
-
-.img-background { height: 250px; object-fit: cover; }
-
-.menu { top: -50px; border-radius: 50px 50px 0 0; background-color: #f2f2f2; }
-
-.menu .nom-resto h1 { width: 240px; font-size: 25px; margin: 25px 10px; }
-
-.menu .nom-resto .checkbox { top: 0; left: 0; }
-
-.menu .ensemble-plat { justify-content: space-around; width: 80%; }
-
-.menu .titre { margin: 40px 20px; }
-
-.menu .titre + div { width: 40px; top: -35px; left: 20px; border: 2px solid #99E2D0; }
-
-.menu .bloc { width: 280px; opacity: 0; animation-name: menu-arrive; animation-duration: 1s; position: relative; overflow: hidden; height: auto; margin: 10px; animation-fill-mode: forwards; }
-
-.menu .bloc .sous-bloc { min-width: 355px; }
-
-.menu .bloc .sous-bloc .nom { width: 230px; height: auto; font-size: 12px; margin: 10px 0 0 10px; transition-duration: 0.4s; }
-
-.menu .bloc .sous-bloc .nom .nom-plat { width: 205px; margin: 5px; }
-
-.menu .bloc .sous-bloc .nom .def-plat { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; margin: 5px 10px 10px 5px; }
-
-.menu .bloc .sous-bloc .effect { flex-direction: row; align-items: flex-end; font-size: 12px; }
-
-.menu .bloc .sous-bloc .effect .prix-plat { padding-right: 20px; padding-bottom: 9px; }
-
-.menu .bloc .sous-bloc .effect .validation { width: 60px; height: 100%; background-color: #99E2D0; }
-
-.menu .bloc .sous-bloc .effect i { font-size: 25px; }
-
-.menu .bloc input { display: none; }
-
-.menu .commander { width: 180px; height: 50px; border: none; margin-top: 30px; border-radius: 25px; background: linear-gradient(#FF79DA, #9356DC); transition-duration: 0.4s; }
-
 .localisator { background: #e6e6e6; }
 
 .localisator div { font-size: 15px; padding: 15px 10px; }
@@ -189,15 +143,59 @@ section .bloc-resto a .texte-boite { justify-content: space-between; }
 
 section .bloc-resto a .texte-boite > div { padding: 15px; }
 
+@media screen and (min-width: 850px) { h2 { margin-left: 100px; }
+  .ensemble-bloc-fonction { display: flex; justify-content: space-around; width: 90%; }
+  .ensemble-bloc-resto { display: flex; flex-wrap: wrap; justify-content: space-around; width: 70%; } }
+
 .heart { width: 50px; height: 50px; top: -35px; left: 220px; display: block; position: relative; text-align: center; padding-top: 15px; }
 
 .heart .yes { z-index: 2; opacity: 0; font-size: 28px; padding: 0 5px; color: #9356DC; transition-duration: 0.3s; transform: scale(0); }
 
 .heart .no { font-size: 25px; top: -27px; color: #000000; }
 
-@media screen and (min-width: 850px) { h2 { margin-left: 100px; }
-  .ensemble-bloc-fonction { display: flex; justify-content: space-around; width: 90%; }
-  .ensemble-bloc-resto { display: flex; flex-wrap: wrap; justify-content: space-around; width: 70%; } }
+footer { padding: 25px 0 25px 0; background-color: #333333; }
+
+footer div { margin: 10px 20px; }
+
+footer div h1 { font-size: 20px; }
+
+footer .ensemble-footer a { text-align: left; width: 250px; margin: 10px 20px; }
+
+.img-background { height: 250px; object-fit: cover; }
+
+.menu { top: -50px; border-radius: 50px 50px 0 0; background-color: #f2f2f2; }
+
+.menu .nom-resto h1 { width: 240px; font-size: 25px; margin: 25px 10px; }
+
+.menu .nom-resto .checkbox { top: 0; left: 0; }
+
+.menu .ensemble-plat { justify-content: space-around; width: 80%; }
+
+.menu .titre { margin: 40px 20px; }
+
+.menu .titre + div { width: 40px; top: -35px; left: 20px; border: 2px solid #99E2D0; }
+
+.menu .bloc { width: 280px; opacity: 0; animation-name: menu-arrive; animation-duration: 1s; position: relative; overflow: hidden; height: auto; margin: 10px; animation-fill-mode: forwards; }
+
+.menu .bloc .sous-bloc { min-width: 355px; }
+
+.menu .bloc .sous-bloc .nom { width: 230px; height: auto; font-size: 12px; margin: 10px 0 0 10px; transition-duration: 0.4s; }
+
+.menu .bloc .sous-bloc .nom .nom-plat { width: 205px; margin: 5px; }
+
+.menu .bloc .sous-bloc .nom .def-plat { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; margin: 5px 10px 10px 5px; }
+
+.menu .bloc .sous-bloc .effect { flex-direction: row; align-items: flex-end; font-size: 12px; }
+
+.menu .bloc .sous-bloc .effect .prix-plat { padding-right: 20px; padding-bottom: 9px; }
+
+.menu .bloc .sous-bloc .effect .validation { width: 60px; height: 100%; background-color: #99E2D0; }
+
+.menu .bloc .sous-bloc .effect i { font-size: 25px; }
+
+.menu .bloc input { display: none; }
+
+.menu .commander { width: 180px; height: 50px; border: none; margin-top: 30px; border-radius: 25px; background: linear-gradient(#FF79DA, #9356DC); transition-duration: 0.4s; }
 
 .description a :hover, .commander:hover { opacity: 0.8; box-shadow: 0 3px 10px black; border: none; }
 
