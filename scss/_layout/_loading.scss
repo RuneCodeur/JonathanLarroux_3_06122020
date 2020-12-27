@@ -10,29 +10,17 @@
     top: 0;
     left: 0;
     z-index: 3;
-    opacity: 0;
-    animation: load-end;
-    animation-delay: $loading-duration;
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-out;
+    animation: load-end 3s $loading-duration forwards ease-out;
     .big-round{
         @extend %flex;
         width: 70px; height: 70px;
         justify-content: center;
-        animation: loading;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
+        animation: loading 1s infinite linear;
         .round-1, .round-2, .round-3{
             width: 25px; height: 25px;
             margin: 5px;
             border-radius: 100%;
-            animation: round-bump;
-            animation-fill-mode: both;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+            animation: round-bump 1s backwards infinite linear;
         }
         .round-1{
             top: 5px;

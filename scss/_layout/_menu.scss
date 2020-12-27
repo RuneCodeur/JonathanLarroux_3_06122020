@@ -44,12 +44,12 @@
             @extend %flex;
             width: 280px;
             opacity: 0;
-            animation-name: menu-arrive;
-            animation-duration: 1s;
             position: relative;
             overflow: hidden;
             height: auto;
             margin: 10px;
+            animation-name: menu-arrive;
+            animation-duration: 1s;
             animation-fill-mode: forwards;
             .sous-bloc{
                 @extend %flex;

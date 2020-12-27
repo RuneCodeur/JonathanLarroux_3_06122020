@@ -2,6 +2,7 @@
     opacity: 0.8;
     box-shadow: 0 3px 10px darken($color-background,100%);
     border: none;
+    outline: none;
 }
 
 .bloc input:checked + .sous-bloc .nom {
