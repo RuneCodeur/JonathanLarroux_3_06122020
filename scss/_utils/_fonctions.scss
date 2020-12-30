@@ -61,6 +61,6 @@
 
 @for $e from 1 through 10{
     .anim--#{$e} {
-        animation-delay: 400ms * $e;
+        animation-delay: $loading-menu * $e;
     }
 }

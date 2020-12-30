@@ -8,7 +8,7 @@
     padding-top: 15px;
     .yes{
         @extend %relative;
-        z-index: 2;
+        z-index: 1;
         opacity: 0;
         font-size: 28px;
         padding: 0 5px;

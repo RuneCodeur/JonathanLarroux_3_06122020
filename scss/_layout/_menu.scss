@@ -93,6 +93,7 @@
                     }
                     i{
                         @extend %font-is-background;
+                        transition-duration: 0.5s;
                         font-size: 25px;
                     }
                 }
