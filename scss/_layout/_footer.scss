@@ -8,6 +8,7 @@ footer{
         h1{
             @extend %font-is-background;
             font-size: 20px;
+            margin-left: 15px;
         }
     }
     .ensemble-footer{

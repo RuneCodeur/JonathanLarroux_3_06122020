@@ -48,7 +48,6 @@ nav {
         @extend %align-item;
         min-width: 250px; height: 60px;
         margin: 12px;
-        background-color: darken($color-background,5%);
         i{
             padding-right: 22px;
             color: darken($color-background,40%);
@@ -88,6 +87,7 @@ section{
             display: block;
             overflow: hidden;
             margin-bottom: -30px ;
+            background-color: $color-background;
             .new{
                 @extend %center;
                 width: 70px; height: 30px;

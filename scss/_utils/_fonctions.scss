@@ -48,13 +48,19 @@
     color: $color-background;
 }
 
-@for $i from 1 through 3{
-    nav .bloc-fonction .font--#{$i}{
-        @if ($i<=2){
-            color: darken($color-background,40%);
+@for $i from 1 through 2{
+    nav .font--#{$i}{
+        @if ($i>1){
+            background-color:lighten($color-secondary,90%);
+            .fas{
+                color: $color-primary;
+            }
         }
-        @else {
-            color: $color-primary;
+        @else{
+            background-color: darken($color-background,5%);
+            .fas{
+                color: darken($color-background,40%);
+            }
         }
     }
 }
